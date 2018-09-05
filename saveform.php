@@ -5,6 +5,7 @@
  * Date: 2018/9/4
  * Time: 18:06
  */
+var_dump($_REQUEST);die;
 $imgData = $_REQUEST['images'];
 if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $imgData, $result)){
     $type = $result[2];
